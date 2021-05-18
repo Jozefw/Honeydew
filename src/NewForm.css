@@ -1,0 +1,46 @@
+.NewForm{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.NewForm label{
+    min-width: 100%;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #92b55b;
+    display: flex;
+}
+
+.NewForm input{
+    flex-grow: 1;
+    border: none;
+    background-color:rgba(224, 254, 167, 1);
+    padding: 0 2em;
+    font-size:initial;
+    border-radius: 5px;
+}
+.NewForm button{
+    padding: 8px 1.3rem;
+    border: .5px solid rgba(146, 181, 86, .3);
+    background: #fff;
+    color:#92b55b;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-family:'Quicksand',sans-serif;
+    border-radius: 5px;
+}
+.NewForm button:hover{
+    transform:scale(1.1);
+   
+}
+.NewForm input,
+.NewForm button{
+    font-family:'Quicksand',sans-serif;
+    height: 3rem;
+
+}

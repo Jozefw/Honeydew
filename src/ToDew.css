@@ -1,0 +1,94 @@
+.Todo{
+    display:flex;
+    margin: 0 -3rem 15px;
+    padding:1.1rem 3rem;
+    justify-content:space-between;
+    align-items:center;
+    background: rgba(224, 254, 167, 1)
+}
+.Todo-task.completed{
+    opacity: .6;
+}
+.Todo-task{
+    position: relative;
+    color:#92b55b;
+    font-weight: 600;
+}
+.Todo-task.completed:before{
+    content:"";
+    position:absolute;
+    top: 50%;
+    left: -.5rem;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background:#5a5858;
+    animation:strikeitem .5s ease-out 0s forwards;
+}
+
+
+@keyframes strikeitem {
+    to {
+        width:calc(100% + 1rem)
+    }
+}
+
+.Todo-buttons{
+    flex-shrink: 0;
+    padding-left: .7em;
+}
+.Todo-buttons button{
+   border: none;
+   font-size:1.25em;
+   margin: .55em;
+   background: none;
+   cursor: pointer;
+   color: #92b55b;
+}
+
+.Todo-form{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.Todo-form label{
+    min-width: 100%;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #92b55b;
+}
+
+.Todo-form input{
+    flex-grow: 1;
+    border: none;
+    background-color:#fff;
+    padding: 0 2em;
+    font-size:initial;
+    border-radius: 5px;
+}
+
+.Todo-form button{
+    padding: 8px 1.3rem;
+    background: #fff;
+    color:#92b55b;
+    border: 1px solid #92b556;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: .5px solid rgba(146, 181, 86, .5);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-family:'Quicksand',sans-serif;
+    border-radius: 5px;
+}
+.Todo-form button:hover{
+    transform:scale(1.1);
+   
+}
+.Todo-form input,
+.Todo-form button{
+    font-family:'Quicksand',sans-serif;
+    height: 3rem;
+
+}
